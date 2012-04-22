@@ -48,7 +48,7 @@ $messages['be-tarask'] = array(
  * @author Kghbln
  */
 $messages['de'] = array(
-	'parserfun-desc' => 'Ergänzt die Parserfunktion <code>#parse</code> zum Parsen von Wikitext, sowie das <code>THIS:</code>-Präfix für Variablen, die von Wikiseiten Informationen abrufen',
+	'parserfun-desc' => 'Ergänzt die Funktion <code>#parse</code> zum Parsen von Wikitext, sowie das <code>THIS:</code>-Präfix für Variablen, die von Wikiseiten Informationen abrufen',
 	'parserfun-invalid-caller-mode' => 'Es wurde kein gültiger Modus oder kein numerischer Index angegeben.',
 );
 
