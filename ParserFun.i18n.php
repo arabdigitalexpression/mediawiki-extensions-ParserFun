@@ -83,6 +83,14 @@ $messages['gl'] = array(
 	'parserfun-invalid-caller-mode' => 'Non se especificou ningún modo de operación ou índice numérico válido.',
 );
 
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['he'] = array(
+	'parserfun-desc' => 'הוספת פונקציית מפענח <code dir="ltr">#parse</code> לפענוח קוד ויקי בהוספת תחילית <code dir="ltr">THIS:</code> למשתנים קסומים של מידע על הדף',
+	'parserfun-invalid-caller-mode' => 'לא נעשתה פעולה תקינה או שניתן מפתח מספרי.',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
