@@ -73,6 +73,7 @@ $messages['es'] = array(
  */
 $messages['fr'] = array(
 	'parserfun-desc' => "Ajoute une fonction de l'analyseur <code>#parse</code> pour analyser le wikitext et introduit le préfixe <code>THIS:</code> pour l'information sur la page liée aux variables magiques",
+	'parserfun-invalid-caller-mode' => "Aucun mode de fonctionnement ni index numérique valide n'a été fourni.",
 );
 
 /** Galician (Galego)
@@ -127,13 +128,16 @@ $messages['mk'] = array(
  */
 $messages['ms'] = array(
 	'parserfun-desc' => 'Menambahkan fungsi penghurai <code>#parse</code> untuk menghuraikan teks wiki serta memperkenalkan awalan <code>THIS:</code> untuk pembolehubah sakti berkenaan maklumat laman',
+	'parserfun-invalid-caller-mode' => 'Tiada mod operasi atau indeks angka sah yang diberikan.',
 );
 
 /** Dutch (Nederlands)
+ * @author Saruman
  * @author Siebrand
  */
 $messages['nl'] = array(
 	'parserfun-desc' => 'Voegt een parserfunctie <code>#parse</code> toe voor het parsen van wikitekst, en introduceert het voorvoegsel <code>THIS:</code> voor aan magische variabelen gerelateerde paginagegevens',
+	'parserfun-invalid-caller-mode' => 'Geen geldige werkingsmodus of numerieke index opgegeven.',
 );
 
 /** Polish (Polski)
