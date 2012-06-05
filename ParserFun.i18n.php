@@ -108,6 +108,14 @@ $messages['ia'] = array(
 	'parserfun-invalid-caller-mode' => 'Nulle modo de operation o indice numeric valide specificate.',
 );
 
+/** Italian (italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'parserfun-desc' => "Aggiunge una funzione parser <code>#parse</code> per l'analisi del wikitesto ed introduce il prefisso <code>THIS:</code> per le informazioni della pagina relative alle variabili",
+	'parserfun-invalid-caller-mode' => 'Nessun modo operativo valido o indice numerico indicato.',
+);
+
 /** Japanese (日本語)
  * @author Fryed-peach
  */
