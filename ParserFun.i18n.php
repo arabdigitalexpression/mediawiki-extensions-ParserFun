@@ -123,6 +123,22 @@ $messages['ja'] = array(
 	'parserfun-desc' => 'ウィキテキストの構文解析を行うパーサー関数 <code>#parse</code> を追加し、ページ情報に関連するマジック変数のための接頭辞 <code>THIS:</code> を導入する',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'parserfun-desc' => '위키 텍스트를 파싱하고 매직 변수를 관련 페이지 정보에 대한 접두사 <code>THIS:</code>를 소개하기 위해 <code>#parse</code> 파서 함수 추가',
+	'parserfun-invalid-caller-mode' => '올바른 작동 모드 또는 숫자 색인이 아닙니다.',
+);
+
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'parserfun-desc' => 'Deiht en Paarfunxjuhn <code lang="en">#parse</code> för Wikitäx ze ongersöhke en et Wiki un der Vörsaz <code lang="en">THIS:</code> för Aanjabe övver de Sigg un Zauberwööter, di domet ze donn han.',
+	'parserfun-invalid-caller-mode' => 'Et es kein jöltijje Zoot jät ze donn udder Zahl aanjejovve.',
+);
+
 /** Macedonian (Македонски)
  * @author Bjankuloski06
  */
