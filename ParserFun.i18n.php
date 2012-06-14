@@ -27,7 +27,7 @@ $messages['qqq'] = array(
 	'parserfun-desc' => '{{desc}}',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -60,7 +60,7 @@ $messages['dsb'] = array(
 	'parserfun-invalid-caller-mode' => 'Žeden płaśiwy modus abo numeriski indeks njepódany.',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  */
 $messages['es'] = array(
@@ -68,7 +68,7 @@ $messages['es'] = array(
 	'parserfun-invalid-caller-mode' => 'No se especificó ningún modo de operación ni índice numérico válido.',
 );
 
-/** French (Français)
+/** French (français)
  * @author Gomoko
  */
 $messages['fr'] = array(
@@ -100,7 +100,7 @@ $messages['hsb'] = array(
 	'parserfun-invalid-caller-mode' => 'Žadyn płaćiwy modus abo numeriski indeks njepodaty.',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -139,7 +139,7 @@ $messages['ksh'] = array(
 	'parserfun-invalid-caller-mode' => 'Et es kein jöltijje Zoot jät ze donn udder Zahl aanjejovve.',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -164,7 +164,7 @@ $messages['nl'] = array(
 	'parserfun-invalid-caller-mode' => 'Geen geldige werkingsmodus of numerieke index opgegeven.',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  */
 $messages['pl'] = array(
