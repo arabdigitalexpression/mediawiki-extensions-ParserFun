@@ -35,7 +35,7 @@ $messages['ast'] = array(
 	'parserfun-invalid-caller-mode' => "Nun se dio dengún mou d'operación o índiz numbéricu válidu.",
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
@@ -52,7 +52,7 @@ $messages['de'] = array(
 	'parserfun-invalid-caller-mode' => 'Es wurde kein gültiger Modus oder kein numerischer Index angegeben.',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -76,7 +76,7 @@ $messages['fr'] = array(
 	'parserfun-invalid-caller-mode' => "Aucun mode de fonctionnement ni index numérique valide n'a été fourni.",
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -92,7 +92,7 @@ $messages['he'] = array(
 	'parserfun-invalid-caller-mode' => 'לא נעשתה פעולה תקינה או שניתן מפתח מספרי.',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
