@@ -181,3 +181,11 @@ $messages['pms'] = array(
 	'parserfun-invalid-caller-mode' => 'Gnun-a manera ëd fonsionament o ìndes numérich a son ëstàit dàit.',
 );
 
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'parserfun-desc' => 'Nagdaragdag ng isang tungkuling pambanghay na <code>#parse</code> para sa pagbabanghay ng mga teksto ng wiki at nagpapakilala ng unlaping <code>THIS:</code> para sa mga bagay na pabagu-bago ng salamangka na may kaugnayan sa kabatirang pampahina',
+	'parserfun-invalid-caller-mode' => 'Walang ibinigay na katanggap-tanggap na gawi ng operasyon o talatuntunan ng bilang.',
+);
+
