@@ -35,7 +35,7 @@ $messages['ast'] = array(
 	'parserfun-invalid-caller-mode' => "Nun se dio dengún mou d'operación o índiz numbéricu válidu.",
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
