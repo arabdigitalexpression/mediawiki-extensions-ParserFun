@@ -188,3 +188,11 @@ $messages['tl'] = array(
 	'parserfun-desc' => 'Nagdaragdag ng isang tungkuling pambanghay na <code>#parse</code> para sa pagbabanghay ng mga teksto ng wiki at nagpapakilala ng unlaping <code>THIS:</code> para sa mga bagay na pabagu-bago ng salamangka na may kaugnayan sa kabatirang pampahina',
 	'parserfun-invalid-caller-mode' => 'Walang ibinigay na katanggap-tanggap na gawi ng operasyon o talatuntunan ng bilang.',
 );
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
+ */
+$messages['zh-hans'] = array(
+	'parserfun-desc' => '添加解析器函数<code>#parse</code>用于解析wikitext和引入<code>THIS:</code>前缀，对页面信息相关的魔术字变量',
+	'parserfun-invalid-caller-mode' => '没有提供有效的操作模式或数字索引。',
+);
