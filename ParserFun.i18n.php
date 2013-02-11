@@ -123,6 +123,13 @@ $messages['ja'] = array(
 	'parserfun-desc' => 'ウィキテキストの構文解析を行うパーサー関数 <code>#parse</code> を追加し、ページ情報に関連するマジック変数のための接頭辞 <code>THIS:</code> を導入する',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'parserfun-invalid-caller-mode' => 'მოცემულია არასწორი ოპერაციის რეჟიმი ან რიცხვითი ინდექსი.',
+);
+
 /** Korean (한국어)
  * @author 아라
  */
