@@ -196,6 +196,14 @@ $messages['tl'] = array(
 	'parserfun-invalid-caller-mode' => 'Walang ibinigay na katanggap-tanggap na gawi ng operasyon o talatuntunan ng bilang.',
 );
 
+/** Ukrainian (українська)
+ * @author Base
+ */
+$messages['uk'] = array(
+	'parserfun-desc' => "Додає функцію парсера <code>#parse</code> для парсингу вікі-тексту і вводить префікс <code>THIS:</code> для сторінок інформації пов'язаних із магічними словами",
+	'parserfun-invalid-caller-mode' => 'Не вказано правильного режиму операції або числового індексу.',
+);
+
 /** Simplified Chinese (中文（简体）‎)
  * @author Yfdyh000
  */
