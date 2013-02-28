@@ -22,9 +22,10 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Fryed-peach
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'parserfun-desc' => '{{desc}}',
+	'parserfun-desc' => '{{desc|name=Parser Fun|url=http://www.mediawiki.org/wiki/Extension:Parser_Fun}}',
 );
 
 /** Asturian (asturianu)
@@ -186,6 +187,14 @@ $messages['pl'] = array(
 $messages['pms'] = array(
 	'parserfun-desc' => "A gionta na funsion <code>#parse</code> ëd l'analisator për analisé ël test wiki e a anseriss ël prefiss <code>THIS:</code> për le variàbij màgiche gropà a j'anformassion an sla pàgina",
 	'parserfun-invalid-caller-mode' => 'Gnun-a manera ëd fonsionament o ìndes numérich a son ëstàit dàit.',
+);
+
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'parserfun-desc' => "Aggiunge 'na funzione analizzatrice <code>#parse</code> pe analizzà 'u teste de le uicchi e 'ndroduce 'u prefisse <code>THIS:</code> pe le 'mbormaziune d'a pàgene collegate a le variabbile maggeche",
+	'parserfun-invalid-caller-mode' => 'Nisciune mode de operazione valide o indice numereche date.',
 );
 
 /** Tagalog (Tagalog)
