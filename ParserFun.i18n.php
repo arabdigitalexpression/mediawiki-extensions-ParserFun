@@ -26,6 +26,7 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'parserfun-desc' => '{{desc|name=Parser Fun|url=http://www.mediawiki.org/wiki/Extension:Parser_Fun}}',
+	'parserfun-invalid-caller-mode' => 'Used as error message if no valid operation mode or valid numeric index given to first parameter.',
 );
 
 /** Asturian (asturianu)
