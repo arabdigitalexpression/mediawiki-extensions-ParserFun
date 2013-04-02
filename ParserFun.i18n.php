@@ -137,7 +137,7 @@ $messages['ka'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'parserfun-desc' => '위키 텍스트를 파싱하고 매직 변수를 관련 페이지 정보에 대한 접두사 <code>THIS:</code>를 소개하기 위해 <code>#parse</code> 파서 함수 추가',
+	'parserfun-desc' => '위키 텍스트를 파싱하고 매직 변수를 관련 페이지 정보에 대한 접두사 <code>THIS:</code>를 소개하기 위해 <code>#parse</code> 파서 함수를 추가합니다',
 	'parserfun-invalid-caller-mode' => '올바른 작동 모드 또는 숫자 색인이 아닙니다.',
 );
 
