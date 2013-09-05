@@ -191,6 +191,20 @@ $messages['pms'] = array(
 	'parserfun-invalid-caller-mode' => 'Gnun-a manera ëd fonsionament o ìndes numérich a son ëstàit dàit.',
 );
 
+/** Portuguese (português)
+ * @author Cainamarques
+ */
+$messages['pt'] = array(
+	'parserfun-desc' => 'Adiciona uma função sintática <code>#parse</code> para análise de wikitexto e introduz o prefixo <code>THIS:</code> para palavras mágicas relacionadas a informações de pagina',
+);
+
+/** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
+ */
+$messages['pt-br'] = array(
+	'parserfun-desc' => 'Adiciona uma função sintática <code>#parse</code> para análise de wikitexto e introduz o prefixo <code>THIS:</code> para palavras mágicas relacionadas a informações de pagina',
+);
+
 /** tarandíne (tarandíne)
  * @author Joetaras
  */
