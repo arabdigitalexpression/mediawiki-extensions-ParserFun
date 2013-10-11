@@ -213,6 +213,14 @@ $messages['roa-tara'] = array(
 	'parserfun-invalid-caller-mode' => 'Nisciune mode de operazione valide o indice numereche date.',
 );
 
+/** Russian (русский)
+ * @author Okras
+ */
+$messages['ru'] = array(
+	'parserfun-desc' => 'Добавляет функцию <code>#parse</code> для разбора викитекста и вводит префикс <code>THIS:</code> для сведений о страницах, связанных с «волшебными» переменным',
+	'parserfun-invalid-caller-mode' => 'Не предоставлен допустимый режим работы или числовой индекс.',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
