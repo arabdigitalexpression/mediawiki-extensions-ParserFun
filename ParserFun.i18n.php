@@ -203,6 +203,7 @@ $messages['pt'] = array(
  */
 $messages['pt-br'] = array(
 	'parserfun-desc' => 'Adiciona uma função sintática <code>#parse</code> para análise de wikitexto e introduz o prefixo <code>THIS:</code> para palavras mágicas relacionadas a informações de pagina',
+	'parserfun-invalid-caller-mode' => 'Não foi especificado um índice numérico válido ou um modo operação válido.',
 );
 
 /** tarandíne (tarandíne)
