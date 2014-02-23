@@ -70,6 +70,14 @@ $messages['es'] = array(
 	'parserfun-invalid-caller-mode' => 'No se especificó ningún modo de operación ni índice numérico válido.',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'parserfun-desc' => 'افزودن تابع تجزیه‌کنندهٔ <code>#parse</code> برای تجزیهٔ متن ویکی و معرفی  <code>THIS:</code> پیشوند برای اطلاعات صفحهٔ مرتبط شده با متغیرهای جادویی',
+	'parserfun-invalid-caller-mode' => 'هیچ روش عملیات معتبر یا شاخص عددی داده نشده.',
+);
+
 /** French (français)
  * @author Gomoko
  */
@@ -153,7 +161,7 @@ $messages['ksh'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'parserfun-desc' => 'Додава парсерска функција <code>#parse</code> за парсирање на викитекст и го воведува префиксот <code>THIS:</code> за волшебни променливи што се однесуваат на информации за страници',
+	'parserfun-desc' => 'Додава расчленувачка функција <code>#parse</code> за расчленување на викитекст и ја воведува претставката <code>THIS:</code> за волшебни променливи што се однесуваат на информации за страници',
 	'parserfun-invalid-caller-mode' => 'Нема зададено важечка операција или бројчен показател.',
 );
 
