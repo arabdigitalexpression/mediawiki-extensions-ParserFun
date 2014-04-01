@@ -3,19 +3,18 @@
 /**
  * 'Parser Fun' adds a parser function '#parse' for parsing wikitext and introduces the
  * 'THIS:' prefix for page information related magic variables
- * 
+ *
  * Documentation: https://www.mediawiki.org/wiki/Extension:Parser_Fun
  * Support:       https://www.mediawiki.org/wiki/Extension_talk:Parser_Fun
  * Source code:   https://svn.wikimedia.org/viewvc/mediawiki/trunk/extensions/ParserFun
- * 
- * @version: 0.3 alpha
+ *
  * @license: ISC license
  * @author:  Daniel Werner < danweetz@web.de >
  *
  * @file ParserFun.php
  * @ingroup Parse
  */
- 
+
 if( !defined( 'MEDIAWIKI' ) ) {
     die( 'This file is a MediaWiki extension, it is not a valid entry point' );
 }
@@ -47,6 +46,7 @@ require_once ExtParserFun::getDir() . '/ParserFun_Settings.php';
 
 
 // magic words and message files:
+$wgMessagesDirs['ParserFun'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['ParserFun'     ] = ExtParserFun::getDir() . '/ParserFun.i18n.php';
 $wgExtensionMessagesFiles['ParserFunMagic'] = ExtParserFun::getDir() . '/ParserFun.i18n.magic.php';
 
@@ -73,12 +73,12 @@ $wgHooks['ParserFirstCallInit'][] = 'ParserFunCaller::staticInit';
 class ExtParserFun {
 	/**
 	 * Version of the 'Parser Fun' extension.
-	 * 
+	 *
 	 * @since 0.1
-	 * 
+	 *
 	 * @var string
 	 */
-	const VERSION = '0.3 alpha';
+	const VERSION = '0.4.0 alpha';
 
 	static function init( Parser &$parser ) {
 		if( self::isEnabledFunction( 'this' ) ) {
@@ -87,12 +87,12 @@ class ExtParserFun {
 		}
 		return true;
 	}
-	
+
 	/**
 	 * returns whether a certain variable/parser function is active by the local wiki configuration.
-	 * 
+	 *
 	 * @since 0.2
-	 * 
+	 *
 	 * @param string $word
 	 * @return bool
 	 */
@@ -100,27 +100,27 @@ class ExtParserFun {
 		global $egParserFunEnabledFunctions;
 		return in_array( $word, $egParserFunEnabledFunctions );
 	}
-	
+
 	/**
 	 * Returns the extensions base installation directory.
 	 *
 	 * @since 0.1
-	 * 
+	 *
 	 * @return string
 	 */
-	static function getDir() {		
+	static function getDir() {
 		static $dir = null;
 		if( $dir === null ) {
 			$dir = dirname( __FILE__ );
 		}
 		return $dir;
 	}
-	
-	
+
+
 	##################
 	# Hooks Handling #
 	##################
-	
+
 	static function onParserGetVariableValueSwitch( Parser &$parser, &$cache, &$magicWordId, &$ret, $frame = null ) {
 		if( $frame === null ) {
 			// unsupported MW version
@@ -131,7 +131,7 @@ class ExtParserFun {
 			case 'this':
 				$ret = ParserFunThis::pfObj_this( $parser, $frame, null );
 				break;
-			
+
 			/** CALLER **/
 			case 'caller':
 				$ret = ParserFunCaller::getCallerVar( $frame );
@@ -139,8 +139,8 @@ class ExtParserFun {
 		}
 		return true;
 	}
-	
-	static function onMagicWordwgVariableIDs( &$variableIds ) {		
+
+	static function onMagicWordwgVariableIDs( &$variableIds ) {
 		// only register variables if not disabled by configuration
 		if( self::isEnabledFunction( 'this' ) ) {
 			$variableIds[] = 'this';
@@ -150,5 +150,5 @@ class ExtParserFun {
 		}
 		return true;
 	}
-	
+
 }
