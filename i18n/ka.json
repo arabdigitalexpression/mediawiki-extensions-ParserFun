@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "David1010"
-        ]
-    },
-    "parserfun-invalid-caller-mode": "მოცემულია არასწორი ოპერაციის რეჟიმი ან რიცხვითი ინდექსი."
+	"@metadata": {
+		"authors": [
+			"David1010"
+		]
+	},
+	"parserfun-invalid-caller-mode": "მოცემულია არასწორი ოპერაციის რეჟიმი ან რიცხვითი ინდექსი."
 }
