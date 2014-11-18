@@ -83,7 +83,7 @@ class ExtParserFun {
 	static function init( Parser &$parser ) {
 		if( self::isEnabledFunction( 'this' ) ) {
 			// only register function if not disabled by configuration
-			$parser->setFunctionHook( 'this', array( 'ParserFunThis', 'pfObj_this' ), SFH_NO_HASH | SFH_OBJECT_ARGS );
+			$parser->setFunctionHook( 'this', array( 'ParserFunThis', 'pfObj_this' ), Parser::SFH_NO_HASH | Parser::SFH_OBJECT_ARGS );
 		}
 		return true;
 	}
