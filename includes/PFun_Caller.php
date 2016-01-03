@@ -168,7 +168,7 @@ class ParserFunCaller extends ParserHook {
 		 * No valid operation mode or index given to first parameter!
 		 * Return error message
 		 */
-		$error = new ValidationError( wfMsgForContent( 'parserfun-invalid-caller-mode' ) );
+		$error = new ValidationError( wfMessage( 'parserfun-invalid-caller-mode' )->text() );
 		return $this->renderFatalError( $error );
 	}
 	
