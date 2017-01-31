@@ -25,7 +25,7 @@ $magicWords['en'] = array(
 /** Message documentation (Message documentation)
  * @author Daniel Werner
  */
-$messages['qqq'] = array(
+$magicWords['qqq'] = array(
 	'this' => array( 1, 'Keyword to put in front of a variable like "{{THIS:PAGENAME}}". This will output the pagename of the page where it is defined on instead of the page actually being parsed. "THIS" refers to that page.' ),
 	'caller' =>  array( 1, 'Variable/Parser function returning an templates direct initiator or with options even all or just specific initiators.' ),
 );
