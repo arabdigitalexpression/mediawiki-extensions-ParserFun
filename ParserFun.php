@@ -6,7 +6,7 @@
  *
  * Documentation: https://www.mediawiki.org/wiki/Extension:Parser_Fun
  * Support:       https://www.mediawiki.org/wiki/Extension_talk:Parser_Fun
- * Source code:   https://svn.wikimedia.org/viewvc/mediawiki/trunk/extensions/ParserFun
+ * Source code:   https://phabricator.wikimedia.org/diffusion/EPFU/
  *
  * @license: ISC license
  * @author:  Daniel Werner < danweetz@web.de >
@@ -15,8 +15,9 @@
  * @ingroup Parse
  */
 
+// Ensure that the script cannot be executed outside of MediaWiki.
 if( !defined( 'MEDIAWIKI' ) ) {
-    die( 'This file is a MediaWiki extension, it is not a valid entry point' );
+	die( 'This is an extension to MediaWiki and cannot be run standalone.' );
 }
 
 // Include the Validator extension if not loaded already:
@@ -32,12 +33,16 @@ if ( ! defined( 'Validator_VERSION' ) ) {
 
 // Extension info & credits:
 $wgExtensionCredits['parserhook'][] = array(
-	'path'           => __FILE__,
-	'name'           => 'Parser Fun',
+	'path' => __FILE__,
+	'name' => 'Parser Fun',
 	'descriptionmsg' => 'parserfun-desc',
-	'version'        => ExtParserFun::VERSION,
-	'author'         => '[https://www.mediawiki.org/wiki/User:Danwe Daniel Werner]',
-	'url'            => 'https://www.mediawiki.org/wiki/Extension:Parser_Fun',
+	'version' => ExtParserFun::VERSION,
+	'author' => array(
+		'[https://www.mediawiki.org/wiki/User:Danwe Daniel Werner]',
+		'...'
+	),
+	'url' => 'https://www.mediawiki.org/wiki/Extension:Parser_Fun',
+	'license-name' => 'ISC'
 );
 
 
@@ -47,7 +52,6 @@ require_once ExtParserFun::getDir() . '/ParserFun_Settings.php';
 
 // magic words and message files:
 $wgMessagesDirs['ParserFun'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['ParserFun'     ] = ExtParserFun::getDir() . '/ParserFun.i18n.php';
 $wgExtensionMessagesFiles['ParserFunMagic'] = ExtParserFun::getDir() . '/ParserFun.i18n.magic.php';
 
 
@@ -78,7 +82,7 @@ class ExtParserFun {
 	 *
 	 * @var string
 	 */
-	const VERSION = '0.4.0 alpha';
+	const VERSION = '0.5.0';
 
 	static function init( Parser &$parser ) {
 		if( self::isEnabledFunction( 'this' ) ) {
