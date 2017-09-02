@@ -21,13 +21,13 @@ if( !defined( 'MEDIAWIKI' ) ) {
 }
 
 // Include the Validator extension if not loaded already:
-if ( ! defined( 'Validator_VERSION' ) ) {
-	@include_once( dirname( __FILE__ ) . '/../Validator/Validator.php' );
+if ( ! defined( 'Validator_VERSION' ) && file_exists( dirname( __FILE__ ) . '/../Validator/Validator.php' ) ) {
+	include_once( dirname( __FILE__ ) . '/../Validator/Validator.php' );
 }
 
 // Only initialize the extension when Validator extension is present:
 if ( ! defined( 'Validator_VERSION' ) ) {
-	die( '<p><b>Error:</b> You need to have <a href="https://www.mediawiki.org/wiki/Extension:Validator">Validator</a> installed in order to use <a href="https://www.mediawiki.org/wiki/Extension:Parse">Parse</a>.</p>' );
+	die( '<p><b>Error:</b> You need to have <a href="https://www.mediawiki.org/wiki/Extension:Validator">Validator</a> installed in order to use <a href="https://www.mediawiki.org/wiki/Extension:ParserFun">ParserFun</a>.</p>' );
 }
 
 
