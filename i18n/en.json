@@ -4,6 +4,6 @@
 			"Daniel Werner"
 		]
 	},
-	"parserfun-desc": "Adds a parser function <code>#parse</code> for parsing wikitext and introduces <code>THIS:</code> prefix for page information related magic variables",
+	"parserfun-desc": "Adds a parser function <code>#parse</code> for parsing wikitext and introduces <code>THIS:</code> prefix and <code>CALLER:</code> variable / parser function for page information related magic.",
 	"parserfun-invalid-caller-mode": "No valid operation mode or numeric index given."
 }
