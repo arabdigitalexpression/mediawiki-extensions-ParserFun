@@ -30,46 +30,6 @@ if ( ! defined( 'Validator_VERSION' ) ) {
 	die( '<p><b>Error:</b> You need to have <a href="https://www.mediawiki.org/wiki/Extension:Validator">Validator</a> installed in order to use <a href="https://www.mediawiki.org/wiki/Extension:ParserFun">ParserFun</a>.</p>' );
 }
 
-
-// Extension info & credits:
-$wgExtensionCredits['parserhook'][] = array(
-	'path' => __FILE__,
-	'name' => 'Parser Fun',
-	'descriptionmsg' => 'parserfun-desc',
-	'version' => ExtParserFun::VERSION,
-	'author' => array(
-		'[https://www.mediawiki.org/wiki/User:Danwe Daniel Werner]',
-		'...'
-	),
-	'url' => 'https://www.mediawiki.org/wiki/Extension:Parser_Fun',
-	'license-name' => 'ISC'
-);
-
-
-// Include the settings file:
-require_once ExtParserFun::getDir() . '/ParserFun_Settings.php';
-
-
-// magic words and message files:
-$wgMessagesDirs['ParserFun'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['ParserFunMagic'] = ExtParserFun::getDir() . '/ParserFun.i18n.magic.php';
-
-
-$wgHooks['ParserFirstCallInit'   ][] = 'ExtParserFun::init';
-
-// for magic word 'THISPAGENAME':
-$wgHooks['MagicWordwgVariableIDs'      ][] = 'ExtParserFun::onMagicWordwgVariableIDs';
-$wgHooks['ParserGetVariableValueSwitch'][] = 'ExtParserFun::onParserGetVariableValueSwitch';
-
-
-// Parser function initializations:
-$wgAutoloadClasses['ParserFunThis'  ] = ExtParserFun::getDir() . '/includes/PFun_This.php';
-$wgAutoloadClasses['ParserFunParse' ] = ExtParserFun::getDir() . '/includes/PFun_Parse.php';
-$wgAutoloadClasses['ParserFunCaller'] = ExtParserFun::getDir() . '/includes/PFun_Caller.php';
-
-$wgHooks['ParserFirstCallInit'][] = 'ParserFunParse::staticInit';
-$wgHooks['ParserFirstCallInit'][] = 'ParserFunCaller::staticInit';
-
 /**
  * Extension class of the 'Parser Fun' extension.
  * Handling the functionality around the 'THIS' magic word feature.
