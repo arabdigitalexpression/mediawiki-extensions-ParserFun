@@ -1,0 +1,52 @@
+{
+	"name": "ParserFun",
+	"author": [
+		"Daniel Werner",
+		"Ryan Kaldari",
+		"Benny Situ",
+		"Luke Welling",
+		"Kunal Mehta",
+		"Moriel Schottlender",
+		"Jon Robson",
+		"Roan Kattouw",
+    "Chad H.",
+    "Siebrand Mazeland",
+    "Karsten Hoffmeyer",
+    "Amir Sarabadani",
+    "Florian",
+    "addsHore",
+    "Sam Reed",
+    "Ahmad Gharbeia"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Parserfun",
+	"descriptionmsg": "parserfun-desc",
+	"license-name": "ISC",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.25.0"
+  },
+  "ExtensionMessagesFiles": {
+      "ParserFunMagic": "ParserFun.i18n.magic.php"
+  },
+  "MessagesDirs": {
+		"ParserFun": [
+			"i18n"
+		]
+  },
+  "AutoloadClasses": {
+    "ParserFunThis": "includes/PFun_This.php",
+    "ParserFunParse": "includes/PFun_Parse.php",
+    "ParserFunCaller": "includes/PFun_Caller.php"
+  },
+  "Hooks": {
+    "ParserFirstCallInit": "ExtParserFun::init",
+    "MagicWordwgVariableIDs": "ExtParserFun::onMagicWordwgVariableIDs",
+    "ParserGetVariableValueSwitch": "ExtParserFun::onParserGetVariableValueSwitch",
+    "ParserFirstCallInit": "ParserFunParse::staticInit",
+    "ParserFirstCallInit": "ParserFunCaller::staticInit"
+  },
+  "egParserFunEnabledFunctions": {
+			"value": ["this", "parse", "caller"]
+  },
+  "manifest_version": 2
+}
