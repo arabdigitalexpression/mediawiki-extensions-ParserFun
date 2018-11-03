@@ -1,4 +1,9 @@
 {
+	"name": "mediawiki/parserfun",
+	"type": "mediawiki-extension",
+	"description": "Adds a parser function <code>#parse</code> for parsing wikitext and introduces <code>THIS:</code> prefix and <code>CALLER:</code> variable / parser function for page information related magic.",
+	"homepage": "https://www.mediawiki.org/wiki/Extension:ParserFun",
+	"license": "ISC",
 	"require": {
 		"mediawiki/validator": ">=1.0.0.1"
 	},
